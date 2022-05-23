@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketCoffee</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="">
+    <nav id="navigation">
+      <div class="wrapper">
+        <div class="logo">
+          <svg
+            class="icon"
+            width="27"
+            height="33"
+            viewBox="0 0 27 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.063 0.637776L21.7972 0.00671443C21.671 -0.0185281 21.5447 0.0319538 21.4943 0.0824388L19.6769 2.45523C19.5507 2.60669 19.5254 2.80863 19.5759 2.98532C19.6264 3.16202 19.4749 3.31348 19.2983 3.28824L17.809 2.96008C17.5818 2.9096 17.3294 2.98533 17.178 3.18727L11.2714 10.76C11.1705 10.9115 10.9685 10.962 10.7918 10.8862L8.54535 9.87653C8.34342 9.77556 8.11624 9.80079 7.93955 9.92701L6.80368 10.7095C6.62699 10.8357 6.37458 10.861 6.17264 10.76L5.61733 10.4823C5.26395 10.3056 4.83484 10.5076 4.73388 10.8862L4.33001 12.6784C4.22904 13.1076 4.40574 13.5367 4.78436 13.7639L5.64257 14.294L8.3939 15.9852L9.7317 16.8182C10.1103 17.0454 10.5899 16.9949 10.9181 16.7172L13.1646 14.7483C13.3412 14.5969 13.6189 14.5464 13.8208 14.6726L14.5024 15.026C14.7295 15.1522 15.0072 15.1017 15.1839 14.925L16.3197 13.8648C16.4964 13.6881 16.7741 13.6629 16.976 13.7639L18.6672 14.5464C18.9196 14.6726 19.2225 14.5969 19.3992 14.3697L20.1817 13.36L26.1135 5.762C26.3911 5.4086 26.2144 4.87851 25.7601 4.77754L24.4475 4.47463C24.1699 4.42414 24.0437 4.07075 24.2456 3.86881L26.2902 1.31932C26.4921 1.01641 26.3659 0.688261 26.063 0.637776Z"
+              fill="#8257E6"
+            />
+            <path
+              d="M6.50093 15.9347C6.37472 15.859 6.24851 15.9852 6.299 16.1114L6.93003 17.7774C6.98052 17.9036 6.98051 18.0299 6.95527 18.1561L6.39996 20.3269C6.37472 20.4784 6.4252 20.6298 6.52617 20.7055L8.11639 21.9424C8.26784 22.0434 8.46977 22.0434 8.59597 21.9172L10.2619 20.4531C10.3629 20.3774 10.4891 20.3269 10.5901 20.3017L12.4832 20.0997C12.6094 20.0745 12.6599 19.8978 12.5337 19.8221L6.50093 15.9347Z"
+              fill="#8257E6"
+            />
+            <path
+              d="M5.94552 21.5385C5.84456 21.4628 5.69311 21.4376 5.5669 21.4881L4.2291 22.1444C4.15338 22.1696 4.10289 22.2453 4.05241 22.3211L1.20011 29.3637C1.20011 29.389 1.20011 29.3889 1.20011 29.4142C1.22536 29.4394 1.2506 29.4647 1.30108 29.4647L1.95736 29.2123C1.9826 29.2123 2.00784 29.2123 2.03308 29.2123C2.05832 29.2375 2.08357 29.288 2.05833 29.3132L0.0137586 32.6705C-0.0367245 32.7462 0.064244 32.8219 0.114727 32.7462L7.5105 25.3249C7.58623 25.2492 7.61147 25.1735 7.63671 25.0725L7.78816 23.1541C7.78816 23.0278 7.73767 22.9269 7.66195 22.8511L5.94552 21.5385Z"
+              fill="#8257E6"
+            />
+          </svg>
+
+          <svg
+            class="name"
+            width="138"
+            height="19"
+            viewBox="0 0 138 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.62951 4.62415C1.19075 4.62415 0.00439453 5.7853 0.00439453 7.24936V12.8027V18.356H2.62951V12.8027V7.24936H5.75946H8.88941V4.62415H5.75946H2.62951V4.62415Z"
+              fill="white"
+            />
+            <path
+              d="M24.5393 11.4648V7.22409C24.5393 5.78527 23.3782 4.59888 21.9141 4.59888H17.6736H13.433C11.9942 4.59888 10.8079 5.76003 10.8079 7.22409V11.4648V15.7056C10.8079 17.1444 11.969 18.3308 13.433 18.3308H17.6736H21.9141C23.3529 18.3308 24.5393 17.1696 24.5393 15.7056V11.4648ZM21.9141 11.4648V15.7056H17.6736H13.433V11.4648V7.22409H17.6736H21.9141V11.4648Z"
+              fill="white"
+            />
+            <path
+              d="M29.7894 4.62415C28.3507 4.62415 27.1643 5.7853 27.1643 7.24936V11.4901V15.7308C27.1643 17.1697 28.3254 18.356 29.7894 18.356L39.0278 18.2298V15.7308H29.7894V11.4901V7.24936H39.0278V4.75036L29.7894 4.62415Z"
+              fill="white"
+            />
+            <path
+              d="M54.0719 4.62415H50.5129L45.3131 10.1522H44.2782V4.62415H41.6531V11.4649V18.3308H44.2782V12.7775H45.5908H45.7927L51.1944 18.3308H54.8039L47.8625 11.1619L54.0719 4.62415Z"
+              fill="white"
+            />
+            <path
+              d="M57.9845 15.7056V12.7774L69.0908 12.6512V10.1522V7.22409C69.0908 5.78527 67.9297 4.59888 66.4657 4.59888H62.2251H57.9845C56.5457 4.59888 55.3594 5.76003 55.3594 7.22409V11.4648V15.7056C55.3594 17.1444 56.5205 18.3308 57.9845 18.3308L69.0908 18.2046V15.7056H57.9845ZM57.9845 7.22409H62.2251H66.4657V10.1522H63.5376H57.9845V7.22409V7.22409Z"
+              fill="white"
+            />
+            <path
+              d="M75.6788 0.610596H74.6691L73.0537 2.60476V4.59891H71.0596V7.22413L73.0537 7.19888V15.7056C73.0537 17.1444 74.2148 18.3308 75.6788 18.3308L79.9194 18.2046V15.7056H75.6788V7.17364L80.298 7.09792V4.59891H75.6788V0.610596Z"
+              fill="white"
+            />
+            <path
+              d="M94.1301 12.7774C94.1301 11.3386 92.969 10.1522 91.505 10.1522H88.1984H84.8917V7.22409H94.1301V4.72509L84.8917 4.59888C83.453 4.59888 82.2666 5.76003 82.2666 7.22409V10.1522C82.2666 11.591 83.4277 12.7774 84.8917 12.7774H88.1984H91.505V15.7056H82.2666V18.2046L91.505 18.3308C92.9438 18.3308 94.1301 17.1696 94.1301 15.7056V12.7774Z"
+              fill="white"
+            />
+            <path
+              d="M107.836 4.62415H103.596H99.3551C97.9163 4.62415 96.73 5.7853 96.73 7.24936V11.4901V15.7308C96.73 17.1697 97.8911 18.356 99.3551 18.356L110.461 18.2298V15.7308H99.3551V12.8027L110.461 12.6765V10.1775V7.24936C110.461 5.7853 109.3 4.62415 107.836 4.62415ZM107.836 10.1522H99.3551V7.22412H103.596H107.836V10.1522V10.1522Z"
+              fill="white"
+            />
+            <path
+              d="M124.193 4.62415L113.086 4.75036V7.24936H124.193V10.1775L113.086 10.3037V12.8027V15.7308C113.086 17.1697 114.248 18.356 115.712 18.356H119.952H124.193C125.631 18.356 126.818 17.1949 126.818 15.7308V11.4901V7.24936C126.793 5.7853 125.631 4.62415 124.193 4.62415ZM124.193 15.7056H119.952H115.712V12.7775H124.193V15.7056V15.7056Z"
+              fill="white"
+            />
+            <path
+              d="M133.381 7.17361L138 7.09788V4.59888H133.381V0.585327H132.371L130.756 2.57948V4.57364H128.762V7.19885L130.756 7.17361V15.6803C130.756 17.1191 131.917 18.3056 133.381 18.3056L137.621 18.1793V15.6803H133.381V7.17361Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Recompensas</a></li>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">Lojas</a></li>
+          </ul>
+
+          <ul class="socialLinks">
+            <li>
+              <a href="http://instagram.com/_u/_s4lv4" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="40"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-miterlimit="10"
+                    stroke-width="16"
+                  ></circle>
+                  <rect
+                    x="36"
+                    y="36"
+                    width="184"
+                    height="184"
+                    rx="48"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></rect>
+                  <circle cx="180" cy="76" r="12"></circle>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gabriel-salvador-141aa6236/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect
+                    x="36"
+                    y="36"
+                    width="184"
+                    height="184"
+                    rx="8"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></rect>
+                  <line
+                    x1="120"
+                    y1="112"
+                    x2="120"
+                    y2="176"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="88"
+                    y1="112"
+                    x2="88"
+                    y2="176"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <path
+                    d="M120,140a28,28,0,0,1,56,0v36"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <circle cx="88" cy="80" r="12"></circle>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511970760896&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20seu%20portf%C3%B3lio!"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M45.4,177A95.9,95.9,0,1,1,79,210.6h0L45.8,220a7.9,7.9,0,0,1-9.8-9.8L45.4,177Z"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <path
+                    d="M152.1,184A79.9,79.9,0,0,1,72,103.9,28,28,0,0,1,100,76h0a6.8,6.8,0,0,1,6,3.5l11.7,20.4a8.1,8.1,0,0,1-.1,8.1l-9.4,15.7h0a48,48,0,0,0,24.1,24.1h0l15.7-9.4a8.1,8.1,0,0,1,8.1-.1L176.5,150a6.8,6.8,0,0,1,3.5,6h0A28.1,28.1,0,0,1,152.1,184Z"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="https://www.linkedin.com/in/gabriel-salvador-141aa6236/"
+          class="coffeeButton"
+          target="_blank"
+        >
+          Pegar meu café
+        </a>
+
+        <svg
+          onclick="openMenu()"
+          class="openMenu"
+          width="24"
+          height="8"
+          viewBox="0 0 24 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M24 0H0V2H24V0Z" fill="#8257E5" />
+          <path d="M24 6H8V8H24V6Z" fill="#8257E5" />
+        </svg>
+
+        <svg
+          onclick="closeMenu()"
+          class="closeMenu"
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.4963 16.0872L1.93994 0.530884L0.525729 1.9451L16.0821 17.5014L17.4963 16.0872Z"
+            fill="#8257E5"
+          />
+          <path
+            d="M16.0822 0.530809L0.525879 16.0872L1.94009 17.5014L17.4964 1.94502L16.0822 0.530809Z"
+            fill="#8257E5"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <h2>O café que fará seu código decolar para o próximo nível.</h2>
+
+        <a
+          href="https://www.linkedin.com/in/gabriel-salvador-141aa6236/"
+          class="coffeeButton"
+          target="_blank"
+        >
+          Pegar meu café
+
+          <svg
+            width="8"
+            height="13"
+            viewBox="0 0 8 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.414 12.207L7.121 6.49997L1.414 0.792969L0 2.20697L4.293 6.49997L0 10.793L1.414 12.207Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+
+        <h1>
+          Great Coffee
+          <br />
+          <strong>&lt;Great Code/&gt;</strong>
+        </h1>
+
+        <div>
+          <img src="./assets/coffee.png" alt="" />
+        </div>
+      </div>
+      <!-- <div class="backgroundBlur">
+        <img src="./assets/BlurLeft.png" alt="" class="blurLeft">
+        <img src="./assets/BlurRight.png" alt="" class="blurRight">
+      </div> -->
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <a href="mailto:gabs.fsalvador@gmail.com?subject=RocketCoffee%20Site">
+          <h3><strong>Mail me:</strong> Gabriel Salvador</h3>
+        </a>
+        <ul class="socialLinks">
+          <li>
+            <a href="http://instagram.com/_u/_s4lv4" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="40"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-miterlimit="10"
+                  stroke-width="16"
+                ></circle>
+                <rect
+                  x="36"
+                  y="36"
+                  width="184"
+                  height="184"
+                  rx="48"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></rect>
+                <circle cx="180" cy="76" r="12"></circle>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gabriel-salvador-141aa6236/"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <rect
+                  x="36"
+                  y="36"
+                  width="184"
+                  height="184"
+                  rx="8"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></rect>
+                <line
+                  x1="120"
+                  y1="112"
+                  x2="120"
+                  y2="176"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="88"
+                  y1="112"
+                  x2="88"
+                  y2="176"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M120,140a28,28,0,0,1,56,0v36"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <circle cx="88" cy="80" r="12"></circle>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511970760896&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20seu%20portf%C3%B3lio!"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M45.4,177A95.9,95.9,0,1,1,79,210.6h0L45.8,220a7.9,7.9,0,0,1-9.8-9.8L45.4,177Z"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M152.1,184A79.9,79.9,0,0,1,72,103.9,28,28,0,0,1,100,76h0a6.8,6.8,0,0,1,6,3.5l11.7,20.4a8.1,8.1,0,0,1-.1,8.1l-9.4,15.7h0a48,48,0,0,0,24.1,24.1h0l15.7-9.4a8.1,8.1,0,0,1,8.1-.1L176.5,150a6.8,6.8,0,0,1,3.5,6h0A28.1,28.1,0,0,1,152.1,184Z"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
